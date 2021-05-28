@@ -30,18 +30,18 @@ files and printing the results to the screen or exporting the data to a CSV or J
 file.
 
 ### $I Recycle Bin File Format (Windows Vista/8/8/8.1)
-Offset | Num Bytes | Info
-- | - | -
-0 | 8 | Windows Version Code (01)
-8 | 8 | Deleted file's size
-16 | 8 | Deletion timestamp in Windows 64 bit FILEFORMAT
-24 | 520 | Deleted file's original path
+| Offset | Num Bytes | Info |
+| --- | --- | --- |
+| 0 | 8 | Windows Version Code (01) |
+| 8 | 8 | Deleted file's size in bytes |
+| 16 | 8 | Deletion timestamp in Windows 64 bit FILEFORMAT |
+| 24 | 520 | Deleted file's original path |
 
 ### $I Recycle Bin File Format (Windows 10)
-Offset | Num Bytes | Info
-- | - | -
-0 | 8 | Windows Version Code (02)
-8 | 8 | Deleted file's size
-16 | 8 | Deletion timestamp in Windows 64 bit FILEFORMAT
-24 | 4 | Length of deleted file's original path in bytes
-28 | n | Deleted file's original path
+| Offset | Num Bytes | Info |
+| --- | --- | --- |
+| 0 | 8 | Windows Version Code (02) |
+| 8 | 8 | Deleted file's size in bytes |
+| 16 | 8 | Deletion timestamp in Windows 64 bit FILEFORMAT |
+| 24 | 4 | Length of deleted file's original path in bytes |
+| 28 | n | Deleted file's original path |
