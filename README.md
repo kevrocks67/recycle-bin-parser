@@ -34,7 +34,7 @@ file.
 | --- | --- | --- |
 | 0 | 8 | Windows Version Code (01) |
 | 8 | 8 | Deleted file's size in bytes |
-| 16 | 8 | Deletion timestamp in Windows 64 bit FILEFORMAT |
+| 16 | 8 | Deletion timestamp in Windows 64 bit FILETIME format |
 | 24 | 520 | Deleted file's original path |
 
 ### $I Recycle Bin File Format (Windows 10)
@@ -42,6 +42,6 @@ file.
 | --- | --- | --- |
 | 0 | 8 | Windows Version Code (02) |
 | 8 | 8 | Deleted file's size in bytes |
-| 16 | 8 | Deletion timestamp in Windows 64 bit FILEFORMAT |
+| 16 | 8 | Deletion timestamp in Windows 64 bit FILETIME format |
 | 24 | 4 | Length of deleted file's original path in bytes |
 | 28 | n | Deleted file's original path |
